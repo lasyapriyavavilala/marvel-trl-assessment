@@ -1,36 +1,12 @@
-# ==============================
-# Core LLM & Agent Framework
-# ==============================
-langchain==0.3.13
-langchain-anthropic==0.3.4
-langchain-community==0.3.13
-langgraph==0.2.62
-
-# ==============================
-# Redis for caching & state management
-# ==============================
-redis==5.2.1
-langchain-redis==0.1.0
-
-# ==============================
-# Web scraping & APIs
-# ==============================
-requests>=2.32.0,<3       # Adjusted to satisfy arxiv dependency
-beautifulsoup4==4.12.3
-google-api-python-client==2.150.0  # For Google Scholar API
-arxiv==2.1.3                # For arXiv papers
-
-# ==============================
-# Data handling
-# ==============================
-pandas==2.2.0
-pydantic==2.10.4
-
-# ==============================
-# Utilities
-# ==============================
-python-dotenv==1.0.1
-tqdm==4.67.1
-jupyter==1.1.1
-
-duckduckgo-search==4.1.1
+# requirements.txt for Agent 1
+anthropic==0.39.0          # Claude API
+langchain==0.3.15          # LLM framework
+langgraph==0.2.60          # Agent orchestration
+networkx==3.4.2            # Graph data structure
+matplotlib==3.9.3          # DSM visualization
+seaborn==0.13.2            # Enhanced heatmaps
+requests==2.32.3           # API calls (OSTI, arXiv)
+pymupdf==1.25.2            # PDF parsing (aka "fitz")
+redis==5.2.1               # Caching
+python-dotenv==1.0.1       # Environment variables
+pydantic==2.10.6           # Data validation
